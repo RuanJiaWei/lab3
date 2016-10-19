@@ -1,6 +1,9 @@
 package lab1;
 import java.util.*;
 public class Polynomial {
+	/**
+	 * 表达式处理函数
+	 */
 	private  static int expression(String s)
 	{
 		int num=0;
@@ -32,7 +35,9 @@ public class Polynomial {
 		}
 		return num;
 	}
-	
+	/**
+	 * 化简函数
+	 */
 	private static void simplify(String s,String s1)
 	{
 		if(s1.equals("!simplify"))
@@ -50,6 +55,9 @@ public class Polynomial {
 			System.out.println(s2);
 		}
 	}
+	/**	
+	 * 求导函数
+	 */
 	private static void derivative(String s,String s2)
 	{
 		String[] str1=s.split("\\+");
